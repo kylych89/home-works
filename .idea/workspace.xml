@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ac129a-6c5e-4fd7-8b99-44084b71e6ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/Me.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/exceptions/DayNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/exceptions/DayNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/exceptions/IncorrectTimeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/models/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/models/Week.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/models/Week.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/models/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/models/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/services/Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/services/Work.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/services/WorkServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork10/services/WorkServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/Week.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/Week.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/models/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/services/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/services/Work.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/services/WorkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork10/services/WorkServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +76,7 @@
       <updated>1608458511766</updated>
       <workItem from="1608458515280" duration="16322000" />
       <workItem from="1608482254604" duration="7125000" />
-      <workItem from="1608490124072" duration="6216000" />
+      <workItem from="1608490124072" duration="6345000" />
     </task>
     <servers />
   </component>

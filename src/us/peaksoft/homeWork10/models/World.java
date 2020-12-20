@@ -1,58 +1,89 @@
 package us.peaksoft.homeWork10.models;
 
 public abstract class World {
-    private String days;
-    private double workTime;
-    private double launchTime;
-    private double lessonTime;
-    private String meaning;
+    private String monday;
+    private String tuesday;
+    private String wednesday;
+    private String thursday;
+    private String friday;
+    private String saturday;
+    private String sunday;
+    private Person person;
 
 
-    public World(String days, double workTime, double launchTime, double lessonTime, String meaning) {
-        this.days = days;
-        this.workTime = workTime;
-        this.launchTime = launchTime;
-        this.lessonTime = lessonTime;
-        this.meaning = meaning;
+    public World(String monday, String tuesday, String wednesday, String thursday, String friday, String saturday, String sunday, Person person) {
+
+        this.monday = monday;
+        this.tuesday = tuesday;
+        this.wednesday = wednesday;
+        this.thursday = thursday;
+        this.friday = friday;
+        this.saturday = saturday;
+        this.sunday = sunday;
+        this.person = person;
     }
 
-    public String getDays() {
-        return days;
+    public String getMonday() {
+        return monday;
     }
 
-    public void setDays(String days) {
-        this.days = days;
+    public void setMonday(String monday) {
+        this.monday = monday;
     }
 
-    public double getWorkTime() {
-        return workTime;
+    public String getTuesday() {
+        return tuesday;
     }
 
-    public void setWorkTime(double workTime) {
-        this.workTime = workTime;
+    public void setTuesday(String tuesday) {
+        this.tuesday = tuesday;
     }
 
-    public double getLaunchTime() {
-        return launchTime;
+    public String getWednesday() {
+        return wednesday;
     }
 
-    public void setLaunchTime(double launchTime) {
-        this.launchTime = launchTime;
+    public void setWednesday(String wednesday) {
+        this.wednesday = wednesday;
     }
 
-    public double getLessonTime() {
-        return lessonTime;
+    public String getThursday() {
+        return thursday;
     }
 
-    public void setLessonTime(double lessonTime) {
-        this.lessonTime = lessonTime;
+    public void setThursday(String thursday) {
+        this.thursday = thursday;
     }
 
-    public String getMeaning() {
-        return meaning;
+    public String getFriday() {
+        return friday;
     }
 
-    public void setMeaning(String meaning) {
-        this.meaning = meaning;
+    public void setFriday(String friday) {
+        this.friday = friday;
+    }
+
+    public String getSaturday() {
+        return saturday;
+    }
+
+    public void setSaturday(String saturday) {
+        this.saturday = saturday;
+    }
+
+    public String getSunday() {
+        return sunday;
+    }
+
+    public void setSunday(String sunday) {
+        this.sunday = sunday;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }

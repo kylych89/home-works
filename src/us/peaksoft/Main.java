@@ -1,6 +1,9 @@
 package us.peaksoft;
-
-import us.peaksoft.homeWork10.exceptions.DayNotFoundException;
+/**
+ * Created by Sydykov Kylych 21.12.2020
+ * for home works!!!
+ */
+import us.peaksoft.homeWork10.models.Me;
 import us.peaksoft.homeWork10.models.Week;
 import us.peaksoft.homeWork10.models.World;
 import us.peaksoft.homeWork10.services.Work;
@@ -13,33 +16,101 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        Me me = new Me("Кылыч", 31);
+
         World[] worlds = {
-                new Week("Monday", 08.00, 12.00, 18.00, "I have to go work..."),
-                new Week("Tuesday", 08.00, 12.00, 18.00, "I have to go work..."),
-                new Week("Wednesday", 08.00, 12.00, 18.00, "I have to go work..."),
-                new Week("Thursday", 08.00, 12.00, 18.00, "I have to go work..."),
-                new Week("Friday", 08.00, 12.00, 18.00, "I have to go work..."),
-                new Week("Saturday", 08.00, 12.00, 18.00, "I have to go work..."),
-                new Week("Sunday", 08.00, 12.00, 18.00, "at home, relaxing..."),
+                new Week("Дүйшөмбү", "Шейшемби", "Шаршемби", "Бейшемби",
+                        "Жума", "Ишемби", "Жекшемби", me)
+
         };
 
-        System.out.println("Enter day:");
+        Work work = new Work("Ас-салам", "Фрунзе №551", worlds);
 
-        String day = scanner.nextLine();
+        boolean initProcessing = true;
+        while (initProcessing) {
+            System.out.println("Салам кыскача мен жонундо....... ");
+            System.out.println("->->->->->->->->->->->");
 
-        Work work = new Work("As-Salam", "Frunze 551", worlds);
+            System.out.println("Менин атым: " + me.getName());
+            System.out.println("Менин жашым: " + me.getAge());
 
-        World world = work.getByDays(day);
+            System.out.println("->->->->->->->->->->->");
 
+            System.out.println("Мен кайрымдуулук " + work.getName() + " фондунда иштеймин");
+            System.out.println("Биздин адрес Бишкек шаарында " + work.getAddress() + " кочосундо жайгашкан");
 
-        if (world == null) {
-            throw new DayNotFoundException("does not have like day: !!!");
+            System.out.println("->->->->->->->->->->->");
+            System.out.println("Менин бир жумалык кундорум кандай отот? " +
+                    "\nБиринчи кундон дем алыш кунго чейин бир кундон карап чыгыныз," +
+                    "\nАл учун томонго кундорду жазыныз...");
+
+            String day1 = scanner.next();
+
+            World world = work.getByDay(day1);
+
+            if (world == null) {
+                System.out.println("Кечиресиз мындай кун жок!!! ");
+                initProcessing = continueAsNeeded(scanner);
+                continue;
+            }
+
+            System.out.println(world.getMonday());
+
+            String day2 = scanner.next();
+
+            World world2 = work.getByDay(day2);
+
+            System.out.println(world2.getTuesday());
+
+            String day3 = scanner.next();
+
+            World world3 = work.getByDay(day3);
+
+            System.out.println(world2.getWednesday());
+
+            String day4 = scanner.next();
+
+            World world4 = work.getByDay(day4);
+
+            System.out.println(world2.getThursday());
+
+            String day5 = scanner.next();
+
+            World world5 = work.getByDay(day5);
+
+            System.out.println(world2.getFriday());
+
+            String day6 = scanner.next();
+
+            World world6 = work.getByDay(day6);
+
+            System.out.println(world2.getSaturday());
+
+            String day7 = scanner.next();
+
+            World world7 = work.getByDay(day7);
+
+            System.out.println(world2.getSunday());
+
+            initProcessing = continueAsNeeded(scanner);
+            continue;
         }
 
-        System.out.println("____________");
-        System.out.println(world.getDays());
-        System.out.println("working: " + world.getWorkTime());
-        System.out.println("having lunch: " + world.getLaunchTime());
-        System.out.println("learning Java: " + world.getLessonTime());
+    }
+
+
+    // method for continue as needed
+    private static boolean continueAsNeeded(Scanner scanner) {
+        System.out.println("Сиз улантууну каалайсызбы...");
+        String answer = scanner.next();
+        if (answer.equals("Ооба")) {
+            return true;
+        }
+
+        if (answer.equals("Жок")) {
+            System.out.println("Конул бурганыныз учун рахмат..!!!");
+            return false;
+        }
+        return false;
     }
 }

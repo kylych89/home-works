@@ -1,13 +1,27 @@
 package us.peaksoft.homeWork10.models;
 
-public class Person extends World {
-
+public abstract class Person {
     private String name;
     private int age;
 
-    public Person(String days, double workTime, double launchTime, double lessonTime, String meaning, String name, int age) {
-        super(days, workTime, launchTime, lessonTime, meaning);
+    public Person(String name, int age) {
         this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
 }

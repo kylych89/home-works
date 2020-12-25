@@ -1,16 +1,18 @@
 package us.peaksoft.homeWork10.services;
 
-import us.peaksoft.homeWork10.models.World;
+import us.peaksoft.homeWork10.enums.StatusOfDay;
+import us.peaksoft.homeWork10.models.Employee;
+import us.peaksoft.homeWork10.models.Schedules;
 
 public class Work implements WorkServiceImpl {
     private String name;
     private String address;
-    private World[] worlds;
+    private StatusOfDay statusOfDay;
+    private Schedules schedules;
 
-    public Work(String name, String address, World[] worlds) {
+    public Work(String name, String address) {
         this.name = name;
         this.address = address;
-        this.worlds = worlds;
     }
 
     public String getName() {
@@ -29,52 +31,69 @@ public class Work implements WorkServiceImpl {
         this.address = address;
     }
 
-    public World[] getWorlds() {
-        return worlds;
+    public StatusOfDay getStatusOfDay() {
+        return statusOfDay;
     }
 
-    public void setWorlds(World[] worlds) {
-        this.worlds = worlds;
+    public void setStatusOfDay(StatusOfDay statusOfDay) {
+        this.statusOfDay = statusOfDay;
     }
 
+    public Schedules getSchedules() {
+        return schedules;
+    }
 
-    // method get all days by day
+    public void setSchedules(Schedules schedules) {
+        this.schedules = schedules;
+    }
+
     @Override
-    public World getByDay(String day) {
-        for (World world : worlds) {
-            if (world.getMonday().equals(day)) {
-                world.setMonday("Биринчи кун... саат 08:00 жумушка келем, 12:00-13:00 обед," +
-                        "\n18:00 Жава сабагына катышам, 21:30 уйго кетем.");
-                return world;
-            }else if (world.getTuesday().equals(day)){
-                world.setTuesday("Экинчи кун... саат 08:00 жумушка келем, 12:00-13:00 обед," +
-                        "\n18:00 софт скилл жана англис тил сабагына катышам, 21:30 уйго кетем.");
-                return world;
-            }else if (world.getWednesday().equals(day)){
-                world.setWednesday("Учунчу кун... саат 08:00 жумушка келем, 12:00-13:00 обед," +
-                        "\n18:00 Жава сабагына катышам, 21:30 уйго кетем.");
-                return world;
-            }else if (world.getThursday().equals(day)){
-                world.setThursday("Тортунчу кун... саат 08:00 жумушка келем, 12:00-13:00 обед," +
-                        "\n18:00 софт скилл жана англис тил сабагына катышам, 21:30 уйго кетем.");
-                return world;
-            }else if (world.getFriday().equals(day)){
-                world.setFriday("Бешинчи кун... саат 08:00 жумушка келем, 12:00-13:00 обед," +
-                        "саат 13:15-14:00 жума намазга барам" +
-                        "\n18:00 Жава сабагына катышам, 21:30 уйго кетем.");
-                return world;
-            }else if (world.getSaturday().equals(day)){
-                world.setSaturday("Алтынчы кун... саат 08:00 жумушка келем, 12:00-13:00 обед," +
-                        "\n жумуштан бош убакытта код жазам тапшырмаларды кайталайм 18:00 уйго кетем.");
-                return world;
-            }else if (world.getSunday().equals(day)){
-                world.setSunday("Дем алыш... уйдо эс алам уй-булом менен сейилдеп келем" +
-                        "\n кечинде кайрадан сабактарды кайталап код жазам.");
-                return world;
-            }
+    public void getWork(Employee employee) {
+        StatusOfDay statusOfDay = employee.getStatusOfDay();
+        Schedules schedules = new Schedules();
+        System.out.println("Hi my name is " + employee.getName());
+        System.out.println("I 'm " + employee.getAge() + " years old");
+        System.out.println("I 'm a " + employee.getPosition());
+        System.out.println("This is what I do in my daily life");
+        System.out.println("><><><><");
+        switch (statusOfDay) {
+            case MONDAY:
+                schedules.setDesignation("The first day....\nI come to work at 08:00 am " +
+                        "\n12:00-13:00 am lunch time \n18:00 pm I study Java \n21:30 pm I go home.");
+                System.out.println(schedules);
+                break;
+            case TUESDAY:
+                schedules.setDesignation("The second day....\nI come to work at 08:00 am \n" +
+                        "12:00-13:00 am lunch time \n18:00 pm I study soft skills and English \n21:30 pm go home.");
+                System.out.println(schedules);
+                break;
+            case WEDNESDAY:
+                schedules.setDesignation("The third day....\nI come to work at 08:00 am \n" +
+                        "12:00-13:00 am lunch time \n18:00 pm I study Java \n21:30 pm I go home");
+                System.out.println(schedules);
+                break;
+            case THURSDAY:
+                schedules.setDesignation("On the fourth day...\nI come to work at 08:00 am \n" +
+                        "12 00-13:00 am lunchtime \n18:00 pm I study soft skills and English \n21:30 pm I go home");
+                System.out.println(schedules);
+                break;
+            case FRIDAY:
+                schedules.setDesignation("On the fifth day, \nI come to work at 08:00 am \n12:00 am to 13:00 am I have lunch \n" +
+                        "from 13:15 am to 14:00 am I go to Friday prayer \n18:00 pm I study Java \n21:30 pm I go home");
+                System.out.println(schedules);
+                break;
+            case SATURDAY:
+                schedules.setDesignation("Day six....\nI come to work at 08:00 am \n" +
+                        "12:00-13:00 am lunch \nI write the code in my free time \nI repeat tasks 18:00 pm I go home");
+                System.out.println(schedules);
+                break;
+            case SUNDAY:
+                schedules.setDesignation("On weekends...\nI relax at home, go for a walk with my family,\n" +
+                        "repeat lessons in the evening, re-write the code");
+                System.out.println(schedules);
+                break;
+            default:
+                System.out.println("Error");
         }
-        return null;
     }
-
-
 }

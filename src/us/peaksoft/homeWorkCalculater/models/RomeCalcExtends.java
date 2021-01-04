@@ -4,58 +4,25 @@ import java.util.Scanner;
 
 public class RomeCalcExtends extends RomeCalc {
     Scanner scanner = new Scanner(System.in);
-    private String a, b;
-    private char operation;
-    private String result;
 
+    String[] arab = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+    String[] rome = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
 
     @Override
     public int calcRome() {
+        String a, b;
+        char operation;
+        String result = null;
 
-        this.a = scanner.nextLine();
-        this.operation = scanner.next().charAt(0);
-        this.b = scanner.nextLine();
+        a = scanner.nextLine();
+        operation = scanner.next().charAt(0);
+        b = scanner.nextLine();
 
-        switch (this.operation){
+        switch (operation){
             case '+':
-               result = a+b;
-                break;
-
+                System.out.println(a);
         }
 
-
-        return 0;
-    }
-
-    public String getA() {
-        return a;
-    }
-
-    public void setA(String a) {
-        this.a = a;
-    }
-
-    public String getB() {
-        return b;
-    }
-
-    public void setB(String b) {
-        this.b = b;
-    }
-
-    public char getOperation() {
-        return operation;
-    }
-
-    public void setOperation(char operation) {
-        this.operation = operation;
-    }
-
-    public String getResult() {
-        return result;
-    }
-
-    public void setResult(String result) {
-        this.result = result;
+        return Integer.parseInt(result);
     }
 }

@@ -9,7 +9,7 @@ public class Main {
 //        arabicCalc.calcArabic();
 
         RomeCalc romeCalc = new RomeCalcExtends();
-        romeCalc.calcRome();
+        System.out.println(romeCalc.calcRome());
 
 
     }

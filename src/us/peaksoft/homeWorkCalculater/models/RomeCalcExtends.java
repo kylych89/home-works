@@ -21,16 +21,31 @@ public class RomeCalcExtends extends RomeCalc {
         a = a.toUpperCase();
         b = b.toUpperCase();
 
-        a = String.valueOf(convertToArabNumbers(a));
-        b = String.valueOf(convertToArabNumbers(b));
+        int arabNumbers = convertToArabNumbers(a);
+        int bArabNumbers = convertToArabNumbers(b);
 
         switch (operation) {
             case '+':
-                a = convertToRomeNumbers(Integer.parseInt(a));
-                b = convertToRomeNumbers(Integer.parseInt(b));
-                result = a+b;
+                result = convertToRomeNumbers(arabNumbers + bArabNumbers);
                 System.out.println(result);
                 break;
+            case '-':
+                result = convertToRomeNumbers(arabNumbers - bArabNumbers);
+                System.out.println(result);
+                break;
+            case '/':
+                result = convertToRomeNumbers(arabNumbers / bArabNumbers);
+                System.out.println(result);
+                break;
+            case '*':
+                result = convertToRomeNumbers(arabNumbers * bArabNumbers);
+                System.out.println(result);
+                break;
+        }
+        try {
+            return result;
+        }catch (NullPointerException e){
+            e.getMessage();
         }
         return result;
     }

@@ -11,23 +11,23 @@ public class Main {
 
         List<Integer> numberList = new ArrayList<>();
 
-        for (int i = 1; i < 100; i++) {
-            numberList.add(random.nextInt(50) + 1);
+        for (int i = 0; i < 50; i++) {
+            numberList.add(random.nextInt(100));
         }
 
         System.out.println("1-100 арасындагы 50 рандомный сандар: " + numberList);
 
-        List<Integer> integerList1 = numberList.subList(0, 49);
-        List<Integer> integerList2 = numberList.subList(50, 99);
+        List<Integer> integerList1 = numberList.subList(0, 24);
+        List<Integer> integerList2 = numberList.subList(25, 49);
         System.out.println("Болунгон биринчи тизме: " + integerList1);
         System.out.println("Болунгон экинчи тизме: " + integerList2);
-
 
         for (int i = 0; i < integerList1.size(); i++) {
             if (integerList1.get(i) % 2 == 0) {
                 System.out.println("Жуп сандар биринчи тизме: " + integerList1.get(i));
             }
         }
+
         System.out.println("________________");
 
         for (int i = 0; i < integerList2.size(); i++) {

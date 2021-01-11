@@ -1,7 +1,7 @@
-package us.peaksoft.homeWorkCalculater.services.impl;
+package us.peaksoft.homeWorkCalculater.servicesArabCalc.impl;
 
 import us.peaksoft.homeWorkCalculater.exceptions.InputMismatchException;
-import us.peaksoft.homeWorkCalculater.services.ArabicCalc;
+import us.peaksoft.homeWorkCalculater.servicesArabCalc.ArabicCalc;
 
 import java.util.Scanner;
 

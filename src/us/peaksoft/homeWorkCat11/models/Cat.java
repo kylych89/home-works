@@ -1,6 +1,6 @@
-package us.peaksoft.homeWorkCat.models;
+package us.peaksoft.homeWorkCat11.models;
 
-import us.peaksoft.homeWorkCat.exceptions.MyException;
+import us.peaksoft.homeWorkCat11.exceptions.MyException;
 
 public class Cat {
 

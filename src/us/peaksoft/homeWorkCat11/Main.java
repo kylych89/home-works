@@ -1,7 +1,7 @@
-package us.peaksoft.homeWorkCat;
+package us.peaksoft.homeWorkCat11;
 
-import us.peaksoft.homeWorkCat.exceptions.MyException;
-import us.peaksoft.homeWorkCat.models.Cat;
+import us.peaksoft.homeWorkCat11.exceptions.MyException;
+import us.peaksoft.homeWorkCat11.models.Cat;
 
 public class Main {
     public static void main(String[] args) {

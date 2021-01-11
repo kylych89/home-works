@@ -7,29 +7,31 @@ public class RomeCalcExtends extends RomeCalc {
     Scanner scanner = new Scanner(System.in);
 
     String[] romeNumbers = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
-    int[] arabNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     @Override
     public String calcRome() {
         System.out.println("ENTER ROME NUMBER: ");
         String a, b;
-        char operation = 0;
-        String result;
+        char operation;
+        String result = null;
 
         a = scanner.next();
         operation = scanner.next().charAt(0);
         b = scanner.next();
         a = a.toUpperCase();
         b = b.toUpperCase();
-        convertToArabNumbers(a);
-        convertToArabNumbers(b);
-//        convertToRomeNumbers(Integer.parseInt(a));
-//        convertToRomeNumbers(Integer.parseInt(b));
 
-        result = a + b;
-        System.out.println(result);
+        a = String.valueOf(convertToArabNumbers(a));
+        b = String.valueOf(convertToArabNumbers(b));
 
-
+        switch (operation) {
+            case '+':
+                a = convertToRomeNumbers(Integer.parseInt(a));
+                b = convertToRomeNumbers(Integer.parseInt(b));
+                result = a+b;
+                System.out.println(result);
+                break;
+        }
         return result;
     }
 
@@ -85,25 +87,4 @@ public class RomeCalcExtends extends RomeCalc {
         }
         return conStr;
     }
-
-//    public String getResOfRomNum(char operation) {
-//        String resS = "";
-//        switch (operation) {
-//            case '+':
-//                resS = arabNumbers[0] + romeNumbers[0];
-//                break;
-//            case '-':
-//                resS = arabNumbers[1] - romeNumbers[1];
-//                break;
-//            case '/':
-//                resS = arabNumbers[0] / romeNumbers[0];
-//                break;
-//            case '*':
-//                resS = arabNumbers[0] * romeNumbers[0];
-//                break;
-//        }
-//        resS += convertToRomeNumbers(operation);
-//
-//        return resS;
-//    }
 }

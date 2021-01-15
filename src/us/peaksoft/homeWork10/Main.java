@@ -1,6 +1,8 @@
-package us.peaksoft.homeWork10.models;
+package us.peaksoft.homeWork10;
 
 import us.peaksoft.homeWork10.enums.StatusOfDay;
+import us.peaksoft.homeWork10.models.Accountant;
+import us.peaksoft.homeWork10.models.Employee;
 import us.peaksoft.homeWork10.services.Work;
 
 public class Main {

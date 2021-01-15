@@ -44,12 +44,11 @@ public class RomeCalcExtends extends RomeCalc {
         }
         try {
             return result;
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             e.getMessage();
         }
         return result;
     }
-
 
     public int convertToArabNumbers(String num) {
         int resArabNumbers = 0;

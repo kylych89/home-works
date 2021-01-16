@@ -21,17 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46ac129a-6c5e-4fd7-8b99-44084b71e6ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/META-INF/home-works.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/exceptions/InputMismatchException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/exceptions/InputMismatchException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/models/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/models/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/models/RomanToInteger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/models/RomeCalcExtends.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWorkCalculater/models/RomeCalcExtends.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/exceptions/InputMismatchException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/exceptions/InputMismatchException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/models/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/models/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/models/RomanToInteger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/models/RomeCalcExtends.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWorkCalculater/models/RomeCalcExtends.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +63,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -82,7 +72,7 @@
       <recent name="us.peaksoft.homeWork10.services.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="us.peaksoft.homeWorkCat.Main" />
       <module name="home-works" />
@@ -158,22 +148,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -205,7 +181,8 @@
       <workItem from="1609924778640" duration="6313000" />
       <workItem from="1610003928465" duration="14026000" />
       <workItem from="1610141264813" duration="418000" />
-      <workItem from="1610143733234" duration="7466000" />
+      <workItem from="1610143733234" duration="7705000" />
+      <workItem from="1610544747456" duration="33000" />
     </task>
     <servers />
   </component>

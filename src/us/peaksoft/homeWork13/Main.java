@@ -13,8 +13,8 @@ public class Main {
         List<Integer> list = new ArrayList<>();
         Map<Integer, Integer> integerMap = new HashMap<>();
 
-        for (int i = 0; i < 100; i++) {
-            list.add(random.nextInt(1000) + 1);
+        for (int i = 0; i < 1000; i++) {
+            list.add(random.nextInt(100) + 1);
             value = integerMap.getOrDefault(list.get(i), 0) + 1;
             integerMap.put(list.get(i), value);
         }

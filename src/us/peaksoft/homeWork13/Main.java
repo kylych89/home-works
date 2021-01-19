@@ -1,49 +1,61 @@
 package us.peaksoft.homeWork13;
 
-import us.peaksoft.practices.LoanAmount;
-
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int value;
-        int count = 0;
         Random random = new Random();
 
-        List<Integer> list = new ArrayList<>();
-        Map<Integer, Integer> integerMap = new HashMap<>();
+        List<Integer> list = getListRandom(random);
 
-        for (int i = 0; i < 1000; i++) {
-            list.add(random.nextInt(100) + 1);
-            value = integerMap.getOrDefault(list.get(i), 0) + 1;
-            integerMap.put(list.get(i), value);
-        }
+        showArrayList(list);
 
-        for (Integer val : integerMap.values()) {
-            if (val > 1) {
-                count++;
-            }
-        }
+        Map<Integer, Integer> integerMap = getIntegerMap(list);
 
-        System.out.println("1000 случайных чисел от 0 до 100 ->");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " ");
-        }
-
-        System.out.println();
-        System.out.println("размер-> " + list.size());
-
-
-        for (Map.Entry<Integer, Integer> entry : integerMap.entrySet()) {
-            System.out.println(" Ключ-> " + entry.getKey() + " " + " Значение-> " + entry.getValue());
-        }
-        System.out.print("количество значений которые встречаются чаще одного раза->" + count);
-
-        System.out.println("\n________________________________________");
+        showArrayMap(integerMap);
 
         //Practices
 
-        LoanAmount loanAmount = new LoanAmount();
-        loanAmount.loanAmount();
+//        LoanAmount loanAmount = new LoanAmount();
+//        loanAmount.loanAmount();
+    }
+
+    private static List<Integer> getListRandom(Random random) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 1000; i++) {
+            list.add(random.nextInt(100) + 1);
+        }
+        return list;
+    }
+
+    private static void showArrayList(List<Integer> list) {
+        System.out.print("[");
+        for (int i = 0; i < list.size(); i++) {
+            if (i > 0) {
+                System.out.print(list.get(i) + ", ");
+            }
+        }
+        System.out.print("]");
+    }
+
+    private static Map<Integer, Integer> getIntegerMap(List<Integer> list) {
+        Map<Integer, Integer> integerMap = new HashMap<>();
+        Integer value;
+        for (Integer i : list) {
+            value = integerMap.get(i);
+            if (value==null){
+                value=list.get(i);
+            }else {
+                value++;
+            }
+            integerMap.put(i,value);
+        }
+        return integerMap;
+    }
+
+    private static void showArrayMap(Map<Integer, Integer> integerMap) {
+        for (Map.Entry<Integer, Integer> entry : integerMap.entrySet()) {
+            System.out.println("\n Ключ-> " + entry.getKey() + " " + " Значение-> " + entry.getValue());
+        }
     }
 }

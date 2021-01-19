@@ -1,9 +1,6 @@
 package us.peaksoft;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by Sydykov Kylych 21.12.2020
@@ -11,6 +8,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+
         List<Integer> listEven = new ArrayList<>();
         List <Integer> listOdd = new ArrayList<>();
         int[] randomNum = new int[50];
@@ -24,6 +22,8 @@ public class Main {
         System.out.println();
         System.out.println("\nArray with ODD nums: ");
         showFilledLists(listOdd);
+
+
     }
     private static void showFilledLists(List<Integer> listEven) {
         int count = 0;

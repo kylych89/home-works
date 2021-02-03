@@ -1,4 +1,4 @@
-package us.peaksoft.practices;
+package us.peaksoft.practices.models;
 
 import java.util.Scanner;
 

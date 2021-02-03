@@ -20,28 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46ac129a-6c5e-4fd7-8b99-44084b71e6ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork16/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/enams/Season.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/enams/SeasonWithEveryThing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/interfaces/Swimmable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/interfaces/impl/DuckImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/interfaces/impl/SharkImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/interfaces/impl/TurtleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/Bread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/Generic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/NewGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/OldGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2021_22_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2021_22_53__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/META-INF/home-works.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork15/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/homeWork15/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork15/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork15/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/practices/LoanAmount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/models/LoanAmount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/homeWork16/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/homeWork16/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +76,7 @@
       <recent name="us.peaksoft.homeWork10.services.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (5)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="us.peaksoft.homeWorkCat.Main" />
       <module name="home-works" />
@@ -202,15 +183,14 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (5)" />
-        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -248,14 +228,41 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="565" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1612352426906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612352426906" />
+    <state width="1853" height="195" key="GridCell.Tab.0.bottom" timestamp="1612352504758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1853" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612352504758" />
+    <state width="1853" height="195" key="GridCell.Tab.0.center" timestamp="1612352504758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1853" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612352504758" />
+    <state width="1853" height="195" key="GridCell.Tab.0.left" timestamp="1612352504758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1853" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612352504758" />
+    <state width="1853" height="195" key="GridCell.Tab.0.right" timestamp="1612352504758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1853" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612352504758" />
+    <state x="582" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1612350667570">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="0" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612350667570" />
   </component>
 </project>

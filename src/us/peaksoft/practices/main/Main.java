@@ -38,10 +38,10 @@ public class Main {
 
         getExceptionError(16);
 
-          arrayToArrayList();
+        arrayToArrayList();
         arrayListToArray();
 
-             getSeasonWithSwitchCase();
+        getSeasonWithSwitchCase();
         getSeasonWithEveryThing();
 
          getFileWriter();
@@ -69,8 +69,7 @@ public class Main {
         list.add(intGeneric);
         list.add(stringGeneric);
 
-        for (OldGeneric s : list
-        ) {
+        for (OldGeneric s : list) {
             System.out.println(s);
         }
 
@@ -88,13 +87,8 @@ public class Main {
         System.out.println(getLastElement(arr));
         System.out.println(getFirstElement(arr));
 
-
         stream();
  */
-
-
-
-
 
     }
 
@@ -139,7 +133,7 @@ public class Main {
     // вараргс
     public static void varargs(String... arr) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
     }
 
@@ -406,5 +400,60 @@ public class Main {
     private static <T> T getFirstElement(T[] arr){
         return arr[0];
     }
+
+    // массивди рандом сандар менен толтуруп эки листке болуу методу
+    private static void fillRandomArrayAndDivideTwoList() {
+        List<Integer> listEven = new ArrayList<>();
+        List <Integer> listOdd = new ArrayList<>();
+        int[] randomNum = new int[50];
+        fillArrayWithRnd(randomNum);
+        System.out.println("Array with random nums:");
+        showElementsOfArray(randomNum);
+        System.out.println();
+        devideToEvenOdd(listEven, listOdd, randomNum);
+        System.out.println("\nArray with EVEN nums: ");
+        showFilledLists(listEven);
+        System.out.println();
+        System.out.println("\nArray with ODD nums: ");
+        showFilledLists(listOdd);
+    }
+
+    // толтурулган тизмелерди көрсөтүү
+    private static void showFilledLists(List<Integer> listEven) {
+        int count = 0;
+        for (int n: listEven) {
+            count++;
+            System.out.print(count + "-[" + n + "]; ");
+        }
+    }
+
+    // толтурулган тизмелерди жуп санга жана так санга которуу
+    private static void devideToEvenOdd(List<Integer> listEven, List<Integer> listOdd, int[] randomNum) {
+        for(int i = 0; i < randomNum.length; i++) {
+            if(randomNum[i]%2 == 0) {
+                listEven.add(randomNum[i]);
+            } else {
+                listOdd.add(randomNum[i]);
+            }
+        }
+    }
+
+    // массивди рандом сандар менен толтуруу методу
+    private static void fillArrayWithRnd(int[] randomNum) {
+        Random random = new Random();
+        for (int i = 0; i < randomNum.length; i++) {
+            randomNum[i] = random.nextInt(100) + 1;
+        }
+    }
+
+    // рандом сан менен толтурулган массивди корсотуу
+    private static void showElementsOfArray(int[] randomNum) {
+        int count = 0;
+        for (int num: randomNum) {
+            count++;
+            System.out.print(count + "-[" + num + "]; ");
+        }
+    }
+
 
 }

@@ -1,5 +1,10 @@
 package us.peaksoft.practices.main;
 
+import us.peaksoft.practices.builder.Person;
+import us.peaksoft.practices.factory.Doughnut;
+import us.peaksoft.practices.factory.DoughnutFactory;
+import us.peaksoft.practices.factory.DoughnutType;
+import us.peaksoft.practices.singleton.EagerSingleton;
 import us.peaksoft.practices.models.Students;
 import us.peaksoft.practices.enams.Season;
 import us.peaksoft.practices.enams.SeasonWithEveryThing;
@@ -7,6 +12,9 @@ import us.peaksoft.practices.interfaces.Swimmable;
 import us.peaksoft.practices.interfaces.impl.DuckImpl;
 import us.peaksoft.practices.interfaces.impl.SharkImpl;
 import us.peaksoft.practices.interfaces.impl.TurtleImpl;
+import us.peaksoft.practices.singleton.EagerStaticBlockSingleton;
+import us.peaksoft.practices.singleton.LazySingleton;
+import us.peaksoft.practices.singleton.President;
 
 import java.io.*;
 import java.util.*;
@@ -88,7 +96,42 @@ public class Main {
         System.out.println(getFirstElement(arr));
 
         stream();
+
+        EagerSingleton eagerSingleton = EagerSingleton.getINSTANCE();
+        System.out.println(eagerSingleton);
+
+
+        EagerStaticBlockSingleton es = EagerStaticBlockSingleton.getInstance();
+        System.out.println(es);
+
+
+        LazySingleton lazySingleton = LazySingleton.getInstance();
+        System.out.println(lazySingleton);
+
+
+        President president = President.getINSTANCE();
+        president.getPresidentName();
+
+
+        DoughnutFactory doughnutFactory = new DoughnutFactory();
+        Doughnut ALMOND = doughnutFactory.getDoughnut(DoughnutType.ALMOND);
+        Doughnut CHERRY = doughnutFactory.getDoughnut(DoughnutType.CHERRY);
+        Doughnut CHOCOLATE = doughnutFactory.getDoughnut(DoughnutType.CHOCOLATE);
+        ALMOND.eat();
+        CHERRY.eat();
+        CHOCOLATE.eat();
+
+
+        Person person = new Person
+                .Builder()
+                .withName("John")
+                .withAge(28)
+                .build();
+        System.out.println(person);
+
  */
+
+
 
     }
 

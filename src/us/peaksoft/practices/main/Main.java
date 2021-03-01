@@ -1,20 +1,12 @@
 package us.peaksoft.practices.main;
 
-import us.peaksoft.practices.builder.Person;
-import us.peaksoft.practices.factory.Doughnut;
-import us.peaksoft.practices.factory.DoughnutFactory;
-import us.peaksoft.practices.factory.DoughnutType;
-import us.peaksoft.practices.singleton.EagerSingleton;
-import us.peaksoft.practices.models.Students;
 import us.peaksoft.practices.enams.Season;
 import us.peaksoft.practices.enams.SeasonWithEveryThing;
 import us.peaksoft.practices.interfaces.Swimmable;
 import us.peaksoft.practices.interfaces.impl.DuckImpl;
 import us.peaksoft.practices.interfaces.impl.SharkImpl;
 import us.peaksoft.practices.interfaces.impl.TurtleImpl;
-import us.peaksoft.practices.singleton.EagerStaticBlockSingleton;
-import us.peaksoft.practices.singleton.LazySingleton;
-import us.peaksoft.practices.singleton.President;
+import us.peaksoft.practices.models.Students;
 
 import java.io.*;
 import java.util.*;
@@ -132,7 +124,6 @@ public class Main {
  */
 
 
-
     }
 
     // стрим менен иштоо методу
@@ -142,19 +133,19 @@ public class Main {
         list1.add(200);
         list1.add(3000);
         List<Integer> mappedBy1 = list1.stream()
-                .map(x-> x *10).map(x-> x/100)
+                .map(x -> x * 10).map(x -> x / 100)
                 .collect(Collectors.toList());
         System.out.println(mappedBy1);
 
         List<Students> list2 = new ArrayList<>(Arrays.asList(
-                new Students(1l,"Students1",4),
-                new Students(2l,"Students2",3),
-                new Students(3l,"Students3",3),
-                new Students(4l,"Students4",4)));
+                new Students(1l, "Students1", 4),
+                new Students(2l, "Students2", 3),
+                new Students(3l, "Students3", 3),
+                new Students(4l, "Students4", 4)));
 
 
         List<Students> mappedBy2 = list2.stream()
-                .filter(x-> x.getAverageGrade()>=4)
+                .filter(x -> x.getAverageGrade() >= 4)
                 .collect(Collectors.toList());
         System.out.println(mappedBy2);
 
@@ -163,12 +154,13 @@ public class Main {
         stringList.add("two");
         stringList.add("three");
 
-        Stream<String> stream =stringList.stream();
+        Stream<String> stream = stringList.stream();
         Optional<String> reduced = stream.reduce(
-                (value, combined)-> {return combined+" + "+value;}
+                (value, combined) -> {
+                    return combined + " + " + value;
+                }
         );
         System.out.println(reduced.get());
-
 
 
     }
@@ -435,19 +427,19 @@ public class Main {
     }
 
     // массивдин акыркы элементтин кайтара турган метод
-    private static <T> T getLastElement(T[] arr){
-        return arr[arr.length-1];
+    private static <T> T getLastElement(T[] arr) {
+        return arr[arr.length - 1];
     }
 
     // массивдин биринчи элементтин кайтара турган метод
-    private static <T> T getFirstElement(T[] arr){
+    private static <T> T getFirstElement(T[] arr) {
         return arr[0];
     }
 
     // массивди рандом сандар менен толтуруп эки листке болуу методу
     private static void fillRandomArrayAndDivideTwoList() {
         List<Integer> listEven = new ArrayList<>();
-        List <Integer> listOdd = new ArrayList<>();
+        List<Integer> listOdd = new ArrayList<>();
         int[] randomNum = new int[50];
         fillArrayWithRnd(randomNum);
         System.out.println("Array with random nums:");
@@ -464,7 +456,7 @@ public class Main {
     // толтурулган тизмелерди көрсөтүү
     private static void showFilledLists(List<Integer> listEven) {
         int count = 0;
-        for (int n: listEven) {
+        for (int n : listEven) {
             count++;
             System.out.print(count + "-[" + n + "]; ");
         }
@@ -472,8 +464,8 @@ public class Main {
 
     // толтурулган тизмелерди жуп санга жана так санга которуу
     private static void devideToEvenOdd(List<Integer> listEven, List<Integer> listOdd, int[] randomNum) {
-        for(int i = 0; i < randomNum.length; i++) {
-            if(randomNum[i]%2 == 0) {
+        for (int i = 0; i < randomNum.length; i++) {
+            if (randomNum[i] % 2 == 0) {
                 listEven.add(randomNum[i]);
             } else {
                 listOdd.add(randomNum[i]);
@@ -492,7 +484,7 @@ public class Main {
     // рандом сан менен толтурулган массивди корсотуу
     private static void showElementsOfArray(int[] randomNum) {
         int count = 0;
-        for (int num: randomNum) {
+        for (int num : randomNum) {
             count++;
             System.out.print(count + "-[" + num + "]; ");
         }

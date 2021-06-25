@@ -21,33 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46ac129a-6c5e-4fd7-8b99-44084b71e6ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2021_22_53_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2021_22_53__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home-works.iml" beforeDir="false" afterPath="$PROJECT_DIR$/home-works.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/META-INF/home-works.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/home_work10/enums/StatusOfDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/home_work10/enums/StatusOfDay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/home_work14/Weeks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/home_work14/Weeks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Bread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Duck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Generic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/NewGeneric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/OldGeneric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Season.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/SeasonWithEveryThing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Shark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Students.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Swimmable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/Turtle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/enams/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/enams/Season.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/enams/SeasonWithEveryThing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/enams/SeasonWithEveryThing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/factory/DoughnutType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/factory/DoughnutType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/main/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/home-works/us/peaksoft/practices/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/practices/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/practices/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/us/peaksoft/home_work10/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/peaksoft/home_work10/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,6 +228,7 @@
       <workItem from="1614614294830" duration="702000" />
       <workItem from="1614615421393" duration="129000" />
       <workItem from="1614615632671" duration="207000" />
+      <workItem from="1624634151399" duration="35000" />
     </task>
     <servers />
   </component>
@@ -275,53 +252,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="677" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1612536302617">
+    <state x="743" y="391" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1624634166536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="677" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612536302617" />
-    <state x="774" y="401" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1614615481855">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="774" y="401" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614615481855" />
-    <state x="565" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1612352426906">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="565" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612352426906" />
-    <state x="640" y="158" key="FileChooserDialogImpl" timestamp="1614615820550">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="158" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614615820550" />
-    <state width="1865" height="267" key="GridCell.Tab.0.bottom" timestamp="1614615857870">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614615857870" />
-    <state width="1865" height="267" key="GridCell.Tab.0.center" timestamp="1614615857870">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614615857870" />
-    <state width="1865" height="267" key="GridCell.Tab.0.left" timestamp="1614615857870">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614615857870" />
-    <state width="1865" height="267" key="GridCell.Tab.0.right" timestamp="1614615857870">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1865" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614615857870" />
-    <state x="478" y="0" key="SettingsEditor" timestamp="1614615932600">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="478" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614615932600" />
-    <state x="506" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1614615631983">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="506" y="257" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614615631983" />
-    <state x="565" y="161" key="extract.method.dialog" timestamp="1612356087367">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="565" y="161" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612356087367" />
-    <state x="582" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1612350667570">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="582" y="0" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612350667570" />
+    <state x="743" y="391" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624634166536" />
   </component>
 </project>
